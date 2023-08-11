@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+This app is for test-task 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Тестовое задание на позицию react developer
 
-## Available Scripts
+Условия:
+Вы можете использовать языки программирования Javascript или Typescript.
+Вы можете использовать фреймворк ReactJS/React Native если сочтёте необходимым. Учтите, что некоторые задания предполагают создание только приложения на React/React Native.
+Вы можете использовать любые библиотеки кроме тех, которые предполагают собой полное выполнение задачи (Lodash и ей подобные). Используйте свои собственные знания вместо готовых функций
+Вы можете использовать систему контроля версий Github если сочтёте нужным.
+Комментирование кода даёт + к общей оценке выполненных задач.
+Вы можете использовать любые стили или библиотеки элементов
+У вас есть 4 часа что бы выполнить максимальное кол-во задач. Вы не обязаны выполнить их все, но максимальное количество приветствуется.
 
-In the project directory, you can run:
+Задача 1
 
-### `npm start`
+Создайте приложение, которое будет проверять является ли строка палиндромом. Пользователь вводит в поле какие либо данные и снизу под строкой должно появиться сообщение “Строка является/не является палиндромом!”. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Тестовые данные для задачи:
+“Привет” => false
+“Hello” => false
+“racecar” => true
+“Racecar” => true
+“А роза упала на лапу азора” => true
+“0110” => true
+“0” => false
+“    ” => false
+“” => false
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Задача 2
 
-### `npm test`
+Создайте приложение, которое будет проводить переворот матрицы NxN на 90 градусов вправо. В этом задании вы можете использовать заранее прописанную матрицу. Графический интерфейс отсутствует, результат вывести в консоль.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Тестовые данные для задачи:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[
+	[1,2,3],
+[1,2,3],
+[1,2,3]
+] => [
+[1,1,1], 
+[2,2,2], 
+[3,3,3]
+]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Усиленный вариант задачи 2
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Создайте приложение с графическим интерфейсом, которое будет проводить переворот матрицы NxN на 90 градусов вправо или влево. Поведение по умолчанию- поворот матрицы на 90 градусов вправо. Пользователь должен видеть первоначальный вариант матрицы, галочку “повернуть влево” и кнопку “Повернуть”. В зависимости от того, нажал ли пользователь галочку, он должен увидеть рядом с первоначальной матрицей модифицированный вариант.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Задача 3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Создайте приложение калькулятора с использованием React. Пользователь должен видеть интерфейс калькулятора (пример ниже, вы не обязаны использовать такие же стили)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ 
+Калькулятор имеет сетку кнопок с цифрами, кнопки с знаками арифметики и 2 кнопки DEL и CLEAR. Кнопка DEL удаляет последний введённый символ. Кнопка CLEAR очищает поле ввода до исходного состояния. Пользователь может совершать только операции с двумя числами. Если введены два числа и знак арифметики, то при повторном нажатии на кнопку на знак арифметики необходимо провести операцию и начать работу с результатом. Пример: пользователь ввёл “5+10” и при нажатии на “+” необходимо вывести на экран “15+”.
 
-### Analyzing the Bundle Size
+Важное примечание: вы не можете использовать eval()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Задача 4
 
-### Making a Progressive Web App
+Создайте приложение с графическим интерфейсом, которое будет определять все ли скобки в строке являются закрытыми. Пользователь должен ввести в поле строку с N количеством скобок либо без них и получить результат в виде сообщения “Все скобки закрыты” либо “Скобки не закрыты” под полем ввода.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Тестовые данные для задачи:
+“(hello)” => true
+“(hello}” => false
+“{(hello)}” => true
+“{  (hello)     }” => true
+“[{(hello)}” => false
+“{()}]” => false
+“[]]]” => false
+“[” => false
+“[    ]” => true
